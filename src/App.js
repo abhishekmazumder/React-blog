@@ -1,11 +1,13 @@
-import Topbar from "./components/topbar/Topbar";
-import Home from "./pages/home/Home";
+import Topbar from './components/topbar/Topbar';
+import Home from './pages/home/Home';
+import SinglePostPage from './pages/singlePostPage/SinglePostPage';
 
 function App() {
 	return (
-		<div className="App">
+		<div>
 			<Topbar />
-			<Home />
+			{/* <Home /> */}
+			<SinglePostPage />
 		</div>
 	);
 }

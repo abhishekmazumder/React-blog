@@ -1,4 +1,7 @@
 .posts {
 	flex: 9;
-	border: 3px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 30px;
 }
