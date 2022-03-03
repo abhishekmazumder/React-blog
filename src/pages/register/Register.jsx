@@ -1,8 +1,10 @@
-import React from 'react'
-import "./register.css"
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './register.css';
+
 
 const Register = () => {
-  return (
+	return (
 		<div className="register">
 			<span className="registerTitle">Register</span>
 			<form className="registerForm">
@@ -14,9 +16,13 @@ const Register = () => {
 				<input type="password" placeholder="Enter Your password..." />
 				<button className="registerBtn">Register</button>
 			</form>
-			<button className="registerLoginBtn">Register</button>
+			<button className="registerLoginBtn">
+				<Link className="link" to="/login">
+					LOGIN
+				</Link>
+			</button>
 		</div>
 	);
-}
+};
 
-export default Register
+export default Register;
