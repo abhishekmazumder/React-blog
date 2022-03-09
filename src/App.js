@@ -18,7 +18,7 @@ function App() {
 				<Route path="/login" element={user ? <Home /> : <Login />} />
 				<Route path="/write" element={user ? <WritePost /> : <Register />} />
 				<Route path="/settings" element={user ? <Settings /> : <Register />} />
-				<Route path="/post/:postId" element={<SinglePostPage />} />
+				<Route path="/posts/:postId" element={<SinglePostPage />} />
 			</Routes>
 		</Router>
 	);
